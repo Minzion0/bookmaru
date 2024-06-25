@@ -1,4 +1,4 @@
-package com.example.bookmaru.model.entity;
+package com.example.bookmaru.domain.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,6 +1,6 @@
-package com.example.bookmaru.model.entity;
+package com.example.bookmaru.domain.model.entity;
 
-import com.example.bookmaru.model.type.Role;
+import com.example.bookmaru.domain.model.type.Role;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

@@ -1,4 +1,4 @@
-package com.example.bookmaru.model.entity;
+package com.example.bookmaru.domain.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,23 +6,25 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import java.time.LocalDate;
 
-@Entity(name = "loan")
-public class LoanEntity extends BaseEntity{
+@Entity(name = "comment")
+public class CommentEntity extends BaseEntity {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   @ManyToOne
-  @JoinColumn(name = "mamber_id")
+  @JoinColumn(name = "member_id")
   private MemberEntity memberEntity;
 
-  private LocalDate loanDate;
+  @ManyToOne
+  @JoinColumn(name = "review_id")
+  private ReviewEntity reviewEntity;
 
-  private LocalDate dueDate;
+  private String content;
 
-  private LocalDate returnDate;
+  private Long parentComment;
 
-  private int totalBooks;
+
 }

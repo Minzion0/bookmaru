@@ -1,4 +1,4 @@
-package com.example.bookmaru.model.type;
+package com.example.bookmaru.domain.model.type;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
