@@ -12,10 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
   private final EmailService emailService;
-  @GetMapping
-  public ResponseEntity<?>testSwagger(){
-    return ResponseEntity.ok().body(null);
-  }
 
   @PostMapping("/email")
   public ResponseEntity<?>emailCode(String email){

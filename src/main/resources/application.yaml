@@ -12,8 +12,6 @@ spring:
           timeout: 5000 # 6 Socket Read Timeout 시간(ms) (기본값 : 무한대)
           starttls:
             enable: true # 7 StartTLS 활성화 여부 (기본값 : false)
-
-
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
@@ -28,7 +26,7 @@ spring:
     properties:
       hibernate:
         format_sql: false
-springfox:
-  documentation:
-    swagger-ui:
-      base-url: /
+  data:
+    redis:
+      host: localhost
+      port: 6379
