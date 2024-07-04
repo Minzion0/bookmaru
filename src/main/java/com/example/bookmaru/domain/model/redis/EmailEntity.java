@@ -1,5 +1,8 @@
 package com.example.bookmaru.domain.model.redis;
 
-public class EmailSignUp {
+import org.springframework.data.redis.core.RedisHash;
+
+@RedisHash(value = "")
+public class EmailEntity {
 
 }
