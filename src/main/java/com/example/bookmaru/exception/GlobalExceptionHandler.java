@@ -1,2 +1,8 @@
-package com.example.bookmaru.exception;public class GlobalExceptionHandler {
+package com.example.bookmaru.exception;
+
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
 }
