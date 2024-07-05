@@ -22,4 +22,7 @@ public class BookEntity extends BaseEntity{
   private Integer stock;
 
   private Double aveRating;
+
+  public BookEntity() {
+  }
 }

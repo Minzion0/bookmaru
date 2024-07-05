@@ -35,7 +35,8 @@ public class MemberEntity extends BaseEntity implements UserDetails {
   @Getter
   private String email;
 
-
+  public MemberEntity() {
+  }
   private MemberEntity(String name, String password, Role role, LocalDate birthdate, String email) {
     this.name = name;
     this.password = password;

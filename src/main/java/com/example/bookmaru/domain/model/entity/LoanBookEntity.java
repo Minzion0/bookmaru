@@ -23,4 +23,7 @@ public class LoanBookEntity extends BaseEntity {
   private int quantity;
 
   private Boolean isReturned;
+
+  public LoanBookEntity() {
+  }
 }

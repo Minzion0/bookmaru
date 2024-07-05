@@ -27,4 +27,6 @@ public class CommentEntity extends BaseEntity {
   private Long parentComment;
 
 
+  public CommentEntity() {
+  }
 }

@@ -25,4 +25,7 @@ public class LoanEntity extends BaseEntity{
   private LocalDate returnDate;
 
   private int totalBooks;
+
+  public LoanEntity() {
+  }
 }

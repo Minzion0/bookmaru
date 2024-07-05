@@ -25,4 +25,7 @@ public class ReviewEntity extends BaseEntity {
   private String content;
 
   private Double StarRating;
+
+  public ReviewEntity() {
+  }
 }
