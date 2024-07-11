@@ -1,4 +1,4 @@
-package com.example.bookmaru.model.entity;
+package com.example.bookmaru.domain.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,8 +7,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
-@Entity(name = "book_category")
-public class BookCategoryEntity extends BaseEntity {
+@Entity(name = "loan_book")
+public class LoanBookEntity extends BaseEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
@@ -17,6 +17,13 @@ public class BookCategoryEntity extends BaseEntity {
   private BookEntity bookEntity;
 
   @ManyToOne
-  @JoinColumn(name = "category_id")
-  private CategoryEntity categoryEntity;
+  @JoinColumn(name = "loan_id")
+  private LoanEntity loanEntity;
+
+  private int quantity;
+
+  private Boolean isReturned;
+
+  public LoanBookEntity() {
+  }
 }
